@@ -9,7 +9,7 @@ body {
 img {
     width: 100%;
     max-width: 100%;
-    display: bloсk;
+    display: block;
 }
 
 a {
@@ -50,16 +50,24 @@ main {
 }
 
 /* Action style */
-.action {
+.action.fetch {
     background-color: #66BB6A;
     font-size: 16px;
     padding: 10px 20px;
     border-radius: 6px;
-    margin: 10px 0;
+    margin: 0 auto;
 }
 
-.action:hover {
+.action.fetch:hover {
     background-color: #4CAF50;
+}
+
+.action.fetch:disabled {
+    background-color: #CFD8DC;
+}
+
+.action.fetch:disabled:hover {
+    background-color: #CFD8DC;
 }
 
 /* Images style */
@@ -126,14 +134,14 @@ figcaption {
     bottom: 0;
     right: 0;
     background-color: rgba(33, 33, 33, 0.5);
-    z-index: -1;
+    z-index: 1;
 }
 
 .popup.open {
     visibility: visible;
 }
 
-.action {
+.action.close {
     position: absolute;
     top: 50px;
     right: 50px;
